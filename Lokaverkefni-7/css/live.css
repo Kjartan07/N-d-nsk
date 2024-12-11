@@ -1,0 +1,48 @@
+/* færir karl */
+@keyframes example1 {
+    0%   { left: 200px; top: 0px; }
+    25%  { left: 0px; top: 0px; }
+    50%  { left: 0px; top: 0px; }
+    75%  { left: 0px; top: 0px; }
+    100% { left: 0px; top: 0px; }
+}
+
+
+/* færir logo */
+@keyframes example2 {
+    0%   { opacity: 0; transform: scale(0.5); }
+    25%  { opacity: 0.5; transform: scale(0.7); }
+    50%  { opacity: 0.7; transform: scale(0.85); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+
+.gaur {
+    position: relative;
+    animation: example1 5.5s; 
+}
+
+.logo {
+    position: relative;
+    animation: example2 1s ease-in-out forwards;
+}
+
+
+
+.image-container {
+    width: 100%; /* Ílát fyllir foreldra í breidd */
+    height: 500px; /* Stillir hæð íláts */
+    overflow: hidden; /* Tryggir að ekkert "flæðir út" */
+    position: relative; /* Til að staðsetning myndarinnar sé rétt */
+    padding-top: 400px;
+    padding-bottom: 100px;
+}
+
+.image-container img {
+    width: 100%; /* Mynd fyllir ílát í breidd */
+    height: 100%; /* Mynd fyllir ílát í hæð */
+    object-fit: cover; /* Passar að myndin fylli á fallegan hátt */
+    position: absolute; /* Staðsetur myndina innan íláts */
+    top: 0;
+    left: 0;
+}
